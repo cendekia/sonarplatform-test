@@ -17,10 +17,10 @@ use App\Http\Controllers\ConversationController;
 |
 */
 
-Route::get('/login', [LoginController::class, 'login']);
+Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/login', [LoginController::class, 'doLogin']);
 
-Route::middleware(['auth.basic'])->group(function () {
+Route::middleware(['auth'])->group(function () {
     Route::get('/', [HomeController::class, 'index']);
 
     Route::get('/conversation/twitter', [ConversationController::class, 'twitter']);
