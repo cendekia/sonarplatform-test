@@ -10,6 +10,15 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
+
+        <!-- Latest Sortable -->
+        <script src="http://SortableJS.github.io/Sortable/Sortable.js"></script>
+        <style>
+            .highlighted {
+                background-color: #9AB6F1;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
     </head>
     <body>
         <div class="d-flex" id="wrapper">
